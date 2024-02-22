@@ -4,7 +4,7 @@ function isIsogram(str) {
     const uniqueChars = new Set();
 
     for(const char of newstr) {
-        if(/^[a-z]&/.test(char)) {
+        if(/^[a-z]$/.test(char)) {
             if(uniqueChars.has(char)) {
                 return false;
             }
